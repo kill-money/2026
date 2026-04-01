@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <title>乡村振兴3.0 - 国家扶贫项目官方下载</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background: linear-gradient(180deg, #f7f9fc 0%, #edf1f7 100%);
+            font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', Helvetica, 'Noto Sans', sans-serif;
+            padding: 24px 16px 48px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 主容器 */
+        .download-card {
+            max-width: 520px;
+            width: 100%;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(30, 58, 95, 0.12), 0 2px 8px rgba(0, 0, 0, 0.04);
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        /* 头部品牌区 - 深蓝色官方风格 */
+        .brand-header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d4a6f 50%, #3d5a7f 100%);
+            padding: 40px 24px 44px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        /* 软件图标图片 */
+        .app-icon {
+            display: inline-block;
+            width: 90px;
+            height: 90px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            background: white;
+            transition: transform 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            object-fit: cover;
+        }
+        .app-icon:hover {
+            transform: scale(1.03);
+        }
+
+        .app-name {
+            font-size: 1.9rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .app-name span {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+        .slogan {
+            font-size: 0.8rem;
+            opacity: 0.9;
+            margin-top: 14px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        /* 扶贫主题装饰 */
+        .project-badge {
+            margin-top: 18px;
+            font-size: 0.7rem;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .project-badge span {
+            background: rgba(255, 255, 255, 0.12);
+            color: rgba(255, 255, 255, 0.95);
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* 内容区 */
+        .content {
+            padding: 28px 22px 24px;
+        }
+
+        .desc-text {
+            text-align: center;
+            margin-bottom: 24px;
+            color: #4a5568;
+            font-weight: 400;
+            font-size: 0.9rem;
+            background: #f7fafc;
+            padding: 14px 16px;
+            border-radius: 12px;
+            line-height: 1.6;
+            border-left: 3px solid #3182ce;
+        }
+
+        .download-tip {
+            font-size: 0.75rem;
+            color: #2d3748;
+            background: #edf2f7;
+            text-align: center;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            display: inline-block;
+            width: 100%;
+        }
+
+        /* 多通道按钮列表 */
+        .channels-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        /* 下载按钮卡片样式 */
+        .download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            border-radius: 14px;
+            padding: 12px 16px 12px 14px;
+            box-shadow: 0 2px 8px rgba(30, 58, 95, 0.06);
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .download-btn:hover {
+            box-shadow: 0 4px 16px rgba(30, 58, 95, 0.1);
+            border-color: #cbd5e0;
+            transform: translateY(-1px);
+        }
+        .download-btn:active {
+            transform: scale(0.98);
+            background: #f7fafc;
+        }
+        /* 左侧图标区 - 应用图标 */
+        .btn-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            background: white;
+        }
+        .btn-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .btn-info {
+            flex: 1;
+        }
+        .channel-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #2d3748;
+            letter-spacing: 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .channel-tag {
+            background: #edf2f7;
+            font-size: 0.65rem;
+            padding: 3px 10px;
+            border-radius: 12px;
+            color: #4a5568;
+            font-weight: 500;
+        }
+        .link-url {
+            font-size: 0.7rem;
+            color: #718096;
+            margin-top: 5px;
+            word-break: break-all;
+            font-family: 'SF Mono', monospace;
+        }
+        .arrow-icon {
+            font-size: 20px;
+            color: #a0aec0;
+            margin-left: 10px;
+            font-weight: 400;
+            transition: all 0.2s;
+        }
+        .download-btn:hover .arrow-icon {
+            color: #3182ce;
+            transform: translateX(3px);
+        }
+
+        /* 备用提示 */
+        .footnote {
+            text-align: center;
+            font-size: 0.7rem;
+            color: #718096;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 18px;
+            margin-top: 6px;
+        }
+        .footnote p {
+            margin: 6px 0;
+            line-height: 1.6;
+        }
+        .safety-badge {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 14px;
+            font-size: 0.65rem;
+            color: #4a5568;
+        }
+        .safety-badge span {
+            background: #f7fafc;
+            padding: 5px 12px;
+            border-radius: 20px;
+            border: 1px solid #e2e8f0;
+            font-weight: 500;
+        }
+        hr {
+            margin: 14px 0 8px;
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #e2e8f0, transparent);
+        }
+        @media (max-width: 480px) {
+            body {
+                padding: 16px 12px 32px;
+            }
+            .brand-header {
+                padding: 32px 20px 36px;
+            }
+            .app-icon {
+                width: 76px;
+                height: 76px;
+                border-radius: 16px;
+            }
+            .app-name {
+                font-size: 1.6rem;
+            }
+            .content {
+                padding: 22px 18px 20px;
+            }
+            .download-btn {
+                padding: 10px 14px 10px 12px;
+            }
+            .btn-icon {
+                width: 40px;
+                height: 40px;
+                border-radius: 8px;
+            }
+            .channel-name {
+                font-size: 0.9rem;
+            }
+        }
+        a, a:visited, a:hover, a:active {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="download-card">
+    <!-- 头部品牌区 -->
+    <div class="brand-header">
+        <img class="app-icon" src="app_logo.png" alt="乡村振兴3.0 应用图标">
+        <div class="app-name">
+            乡村振兴3.0 <span>官方版</span>
+        </div>
+        <div class="slogan">
+            巩固脱贫成果 · 助力乡村全面振兴
+        </div>
+        <div class="project-badge">
+            <span>国家扶贫重点项目</span>
+            <span>惠民工程推荐APP</span>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="desc-text">
+            国家乡村振兴局指导 · 助农帮扶平台<br>
+            提供产业对接、惠农政策、技能培训与农产品上行服务
+        </div>
+
+        <div class="download-tip">
+            点击下方任一通道，直接跳转下载 | 如遇拦截请尝试其他备用链接
+        </div>
+
+        <!-- 五个下载链接通道 -->
+        <div class="channels-list">
+            <a class="download-btn" href="https://fupin.short.gy/fupin001" target="_blank" rel="noopener noreferrer">
+                <div class="btn-icon">
+                    <img src="app_logo.png" alt="下载图标">
+                </div>
+                <div class="btn-info">
+                    <div class="channel-name">
+                        下载通道 ① <span class="channel-tag">官方主链</span>
+                    </div>
+                    <div class="link-url">fupin001 · 极速下载</div>
+                </div>
+                <div class="arrow-icon">›</div>
+            </a>
+
+            <a class="download-btn" href="https://fupin.short.gy/fupin-xiangcun" target="_blank" rel="noopener noreferrer">
+                <div class="btn-icon">
+                    <img src="app_logo.png" alt="下载图标">
+                </div>
+                <div class="btn-info">
+                    <div class="channel-name">
+                        下载通道 ② <span class="channel-tag">乡村振兴专线</span>
+                    </div>
+                    <div class="link-url">fupin-xiangcun · 高速备用</div>
+                </div>
+                <div class="arrow-icon">›</div>
+            </a>
+
+            <a class="download-btn" href="https://fupin.short.gy/fx-apk" target="_blank" rel="noopener noreferrer">
+                <div class="btn-icon">
+                    <img src="app_logo.png" alt="下载图标">
+                </div>
+                <div class="btn-info">
+                    <div class="channel-name">
+                        下载通道 ③ <span class="channel-tag">APK直装</span>
+                    </div>
+                    <div class="link-url">fx-apk · 安卓专用</div>
+                </div>
+                <div class="arrow-icon">›</div>
+            </a>
+
+            <a class="download-btn" href="https://fupin.short.gy/pin-sec" target="_blank" rel="noopener noreferrer">
+                <div class="btn-icon">
+                    <img src="app_logo.png" alt="下载图标">
+                </div>
+                <div class="btn-info">
+                    <div class="channel-name">
+                        下载通道 ④ <span class="channel-tag">安全加固</span>
+                    </div>
+                    <div class="link-url">pin-sec · 防劫持节点</div>
+                </div>
+                <div class="arrow-icon">›</div>
+            </a>
+
+            <a class="download-btn" href="https://xczx3.short.gy/ot0pHw" target="_blank" rel="noopener noreferrer">
+                <div class="btn-icon">
+                    <img src="app_logo.png" alt="下载图标">
+                </div>
+                <div class="btn-info">
+                    <div class="channel-name">
+                        下载通道 ⑤ <span class="channel-tag">扶贫专项</span>
+                    </div>
+                    <div class="link-url">xczx3 · 备用镜像</div>
+                </div>
+                <div class="arrow-icon">›</div>
+            </a>
+        </div>
+
+        <div class="footnote">
+            <p>根据国家"数字乡村"战略，提供纯净下载通道。<br>
+            所有链接均为官方短链直达，点击即跳转，无中间页、无拦截脚本。<br>
+            若某链接无法打开，请返回本页尝试其他通道，均归属"乡村振兴3.0"正版安装包。</p>
+            <div class="safety-badge">
+                <span>无病毒检测</span>
+                <span>扶贫办备案</span>
+                <span>安全跳转保障</span>
+            </div>
+            <hr>
+            <p style="font-size:0.6rem;color:#a0aec0;">乡村振兴3.0 — 让乡村更美好，让农民更富足 | 国家乡村振兴公益项目</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function() {
+        if (typeof window !== 'undefined') {
+            const btns = document.querySelectorAll('.download-btn');
+            btns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    let url = this.getAttribute('href');
+                    if (url) {
+                        console.log('[乡村振兴3.0] 用户通过下载通道跳转: ' + url);
+                    }
+                });
+            });
+        }
+    })();
+</script>
+</body>
+</html>
