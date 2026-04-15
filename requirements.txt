@@ -1,0 +1,5 @@
+telethon
+redis
+asyncpg
+prometheus_client
+python-dotenv
